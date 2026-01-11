@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            color: white;
+            margin-top: -40px;
+            margin-bottom: -50px;
+        }
+        div {
+            margin-bottom: 29px;
+            color: #f4c430;
+              font-family: "Caveat Brush", cursive;
+            font-size: 16px;
+           
+        }
+        label {
+             display: block;
+             /* border-radius: 12px; */
+             
+        }
+
+
+        input{
+            /* border-radius: 12px; */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: #f4c430 solid;
+        }
+        .large-input {
+            width: 97%;
+            height: 45px;
+        }
+        textarea {
+            width: 97%;
+            height: 105px;
+            /* border-radius: 12px; */
+             border: #f4c430 solid
+            
+           
+          
+           
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: -50px;
+        }
+       
+        /* input:not(:placeholder-shown)+label{ */
+      
+    
+       form {
+        margin: 105px
+       }
+       button {
+        background-color: #f4c430;
+            color: black;
+            /* border-radius: 12px; */
+            /* box-shadow:  2px #f4c430; */
+            width: 97.9%;
+            height: 35px;
+            margin-top: -15px;
+             border: #f4c430 solid
+            
+       }
+       .field{
+            position: relative;
+        }
+
+
+
+        textarea:focus + label{
+            top:18px;
+            transform: none;
+
+        }
+         textarea:focus + label,
+         textarea:not(:placeholder-shown) + label {
+            top: -17px;
+            font-size: 12px;
+        }
+
+
+
+
+
+        
+
+        label{
+            position: absolute;
+            top: 50%;
+            left: 14px;
+            transform: translateY(-50%);
+            transition: .3s;
+            pointer-events: none;
+        }
+
+        input:focus + label,
+        input:valid + label{
+            top: -8px;
+            font-size: 12px;
+        }
+        .boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+             height: 45px;
+             width: 98%;
+             gap: 25px;
+             /* padding: 20px; */
+        }
+        h1 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+        
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h2 class="logo">Port<span>folio</span> </h2>
+            
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="form-section">
+            <h1>Let's Get in Touch!😉</h1>
+            <form action="confirmation.html" method="GET">
+                <div class="boxes">
+
+                <div class="field ">
+                    <input type="text" name="full-name" id="full-nmae" required minlength="2" class="large-input" class="namebox"/>
+                    <label for="full-nmae">Full Name:</label>
+               
+                </div>
+
+                <div class="field">
+                    <input type="number" name="phone-number" id="phone-number" required class="large-input" class="namebox"/>
+                    <label for="phone-number" >Phone Number:</label>
+                    
+                </div>
+                </div>
+
+                <div class="field">
+                    <input type="email" name="email" id="email" required class="large-input"/>
+                    <label for="email">E-mail:</label>
+                    
+                </div>
+
+                <div class="field">
+                    <textarea placeholder="" id="comments"></textarea>
+                    <label for="comments">Your Message:</label>
+                    
+                </div>
+
+                <div>
+                    <button type="submit" class="submit">Send Message</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+        
+    
+
+    <footer>  
+        <p class="first-p">Connect with me:</p>
+        <div class="social-icons"> 
+            
+                <img src="images/facebook-icon.png" alt="facebook-icon"/>
+                <img src="images/instagram-icon.png" alt="instagram-icon"/>
+                <img src="images/whatsapp-icon.png" alt="whatsapp-icon"/>
+                <img src="images/twitter-icon.png" alt="twitter-icon"/>
+            
+        </div>
+        <p class="second-p"> 2025 Fatima Portfolio</p>
+    </footer>
+        
+</body>
+</html>
